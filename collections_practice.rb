@@ -55,13 +55,13 @@ end
 
 def organize_schools(school)
   hash = {}
-  NYC = []
-  SF = []
-  Chicago = []
+  nyc = []
+  sf = []
+  chicago = []
   school.each do |schools, loca|
     loca.each do |key, city|
       if city == "NYC"
-        NYC << key
+        nyc << schools
       end
     end
   end
@@ -69,20 +69,20 @@ def organize_schools(school)
   school.each do |schools, loca|
     loca.each do |key, city|
       if city == "SF"
-        SF << key
+        sf << schools
       end
     end
   end
   
   school.each do |schools, loca|
     loca.each do |key, city|
-      if city == "NYC"
-        Chicago << key
+      if city == "Chicago"
+        chicago << schools
       end
     end
-  end 
-  hash["NYC"] = NYC
-  hash["SF"] = SF
-  hash["Chicago"] = Chicago
+  end
+  hash["NYC"] = nyc
+  hash["SF"] = sf
+  hash["Chicago"] = chicago
   hash
 end

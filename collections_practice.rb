@@ -54,6 +54,8 @@ def find_cool(cool)
 end
 
 def organize_schools(school)
-  school.each do ||
+  school.each do |schools, loca|
+    loca.each
+  end
   
 end

@@ -56,10 +56,12 @@ end
 def organize_schools(school)
   NYC = []
   SF = []
-  Chicago
+  Chicago = []
   school.each do |schools, loca|
     loca.each do |key, city|
       if city == "NYC"
+        NYC << key
+      end
     end
   end
   

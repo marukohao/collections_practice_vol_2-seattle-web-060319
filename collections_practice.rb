@@ -54,6 +54,9 @@ def find_cool(cool)
 end
 
 def organize_schools(school)
+  NYC = []
+  SF = []
+  Chicago
   school.each do |schools, loca|
     loca.each do |key, city|
       if city == "NYC"

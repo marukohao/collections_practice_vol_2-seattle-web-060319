@@ -55,7 +55,9 @@ end
 
 def organize_schools(school)
   school.each do |schools, loca|
-    loca.each
+    loca.each do |key, city|
+      if city == "NYC"
+    end
   end
   
 end

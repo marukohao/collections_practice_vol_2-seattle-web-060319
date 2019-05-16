@@ -54,6 +54,7 @@ def find_cool(cool)
 end
 
 def organize_schools(school)
+  hash = {}
   NYC = []
   SF = []
   Chicago = []
@@ -80,5 +81,8 @@ def organize_schools(school)
       end
     end
   end 
-  
+  hash["NYC"] = NYC
+  hash["SF"] = SF
+  hash["Chicago"] = Chicago
+  hash
 end
